@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>深圳市鹏锋瑞装饰设计有限公司</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/glyphicons/css/glyphicons.css">
+	<script type="text/javascript" src="javascripts/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="javascripts/rem.js"></script>
+</head>
+<body>
+	<div id="top">
+		<div id="top-column" class="wrap">
+			<span class="glyphicon glyphicon-envelope"></span>
+			<a href="">415635608@qq.com</a>
+			&nbsp;
+			<span class="glyphicon glyphicon-phone-alt"></span>
+			<a href="">+(86) 0755 8259 8085</a>
+			<!-- <p></p> -->
+		</div>	
+	</div>
+	<div id="header" class="wrap">
+		<div id="nav">
+			<ul id="navigator">
+				<li><a href="#" >首页</a></li>
+				<li><a href="#our-serve" >我们的服务</a></li>
+				<li><a href="#" >我们的团队</a></li>
+				<li id="company-title"><h1 style="font-size: 0.2rem">鹏锋瑞装饰</h1></li>
+				<li><a href="#" >我们的产品</a></li>
+				<li><a href="#" >客户的评价</a></li>
+				<li><a href="#" >联系我们吧</a></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#navigator li a').click(function(){
+			// 如何点击当前a标签让左右括号定在那里不动
+			$(this).hover();
+		});
+	</script>
+	<div id="product">
+		<div class="lbtu">
+			<img src="images/2.jpg" alt="" >
+			<img src="images/car1.jpg" alt="" class="hide">
+			<img src="images/car2.jpg" alt="" class="hide">
+			<img src="images/car3.jpg" alt="" class="hide">
+		</div>
+		<span id="click"><h3>Click</h3></span>
+		<ul id="lunb">
+			<li>
+				<span class="lbclass">o</span>
+				<span>o</span>
+				<span>o</span>
+				<span>o</span>
+			</li>
+		</ul>
+	</div>
+	<div id="back-top">
+		<a href="#top">
+			<span class="glyphicon glyphicon-circle-arrow-up"></span>
+		</a>
+	</div>
+	<div id="introduce">
+		<h2>Welcome</h2>
+		<div class="introduce-left introduce-content">
+			<h3>深圳市鹏锋瑞装饰设计工程有限公司</h3>
+			<p>装饰设计的任务要达到建筑物本身的使用功能，合理提高室内环境的物质水准，使人从精神上得以满足，提高室内空间的生理和心理环境质量。
+			现代室内装饰设计应运用现代科学技术法则和美学规律，尤其是居住建筑要从适用和经济的原则出发，力求室内空间布局合理，通风采光良好，利于家具陈设布置等，用较少的人、财、物创造出理想的室内环境，以提高物质生活水准。同时，还应遵循美学法则，创造出一个富有个性而且优美的室内环境，充分表现不同功能空间和使用对象的精神内涵。</p>
+		</div>
+		<div class="introduce-right introduce-content">
+			<div class="logo-picture">
+			<img src="images/6-small.jpg" alt=""></div>
+		</div>
+	</div>
+	<div style="clear: both"></div>
+	<div id="our-serve">
+		<h2>我们的服务</h2>
+		<div class="serve">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id="our-group">
+		<h2>我们的团队</h2>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script>
+	var $browser=$('html, body');
+	$(function(){
+		var timer;
+		var index=0;
+		var length=$(".lbtu img").length;
+		function lunbo(){
+			timer=setInterval(function(){
+				next()
+			},2000)
+		};
+		lunbo();
+		var next=function(){
+			index++;
+			console.log(index);
+			index = index > length-1 ? 0 : index;
+			$(".lbtu img").eq(index).fadeIn('slow').siblings().fadeOut('slow');	
+			$("#lunb li span").eq(index).addClass("lbclass").siblings().removeClass("lbclass");
+				};
+	});
+	$('a').click(function(){
+	    $browser.animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 1000);
+    return false;
+});
+	</script>
+</body>
+</html>

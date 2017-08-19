@@ -1,0 +1,215 @@
+.wrap{
+	width: 100%;
+	/*padding: 0 0.1rem;*/
+	margin: 0 auto;
+	text-align:center;
+}
+/*顶部固定栏---开始*/
+#top{
+	height: 0.25rem;
+	margin-bottom: 0.1rem;
+	background: #2D2D2D;
+	position: relative;
+}
+#top-column{
+	width: 2rem;
+	position: absolute;
+	text-align: left;
+	font-size: 0.07rem;
+	top: 0.05rem;
+	left: 0.5rem;
+}
+#top-column a{
+	color: #fff;
+}
+#top-column span{
+	line-height: 0.15rem;
+	font-size: 0.1rem;
+	color: #fff;
+}
+/*首页导航栏--开始*/
+#nav ul{
+	/*display: flex;*/
+	/*display: inline-block;*/
+	/*float: left;*/
+	margin-bottom: 0.05rem;
+}
+#navigator li{
+	/*float: left;*/
+	display: inline-block;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.12rem;
+	width: 0.7rem;
+	padding: 0.05rem;
+}
+#navigator li a{
+	position: relative;
+	color: #A5A5A5;
+}
+#navigator li a::before{
+	position: absolute;
+	content: "\5B";
+	left: 0;
+	opacity: 0;
+}
+#navigator li a::after{
+	position: absolute;
+	content: "\5D";
+	right: 0;
+	opacity: 0;
+}
+#navigator li a:hover{
+	color: #B8D29B;
+}
+#nav #company-title{
+	width: 1.2rem;
+	color: #B8D29B;
+	display: inline-block;
+}
+#navigator li a:hover::before, a:hover::after{ 
+	position: absolute; 
+}  
+#navigator li a:hover::before{ 
+	content: "\5B"; 
+	display: block;
+	left: -0.1rem;
+	opacity: 1;	
+	-webkit-transition: 1s ease;
+}  
+#navigator li a:hover::after{ 
+	content: "\5D"; 
+	right:  -0.1rem;
+	opacity: 1;
+	-webkit-transition: 1s ease; 
+} 
+/*<首页导航栏---结束> */
+/*<首页轮播图---开始> */
+#product{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width: 6rem;
+	padding: 0 0.15rem;
+	height: 3.35rem;
+	position: relative;
+	overflow: hidden;
+}
+#click{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.5rem;
+	margin-top: 0.25rem;
+	display: inline-block;
+	width: 1rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	border: 0.01rem solid #B8D29B;
+	color: white;
+	background: #B8D29B;
+	-webkit-transition: 1.5s ease;
+}
+#click:hover{
+	cursor: pointer;
+	background: none;
+	color: #B8D29B;
+	-webkit-transition: 1s ease;
+}
+#product #lunb{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	margin-top: -0.4rem;
+	margin-left: -0.5rem;
+	color: #B8D29B;
+}
+#product #lunb span{
+	display: inline-block;
+	padding: 0 0.1rem;
+}
+.lbtu{
+	/*overflow: hidden;*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.lbtu img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lbclass{
+	font-weight: bold;
+	color: #fff;
+}
+.hide{
+	display: none;
+}
+/*轮播图结束*/
+/*欢迎的introduce---开始*/
+#introduce{
+	margin-top: 0.05rem;
+	margin-left: 0.3rem;
+	/*display: flex;*/
+}
+#introduce h2{
+	color: #B8D29B;	
+
+}
+.introduce-left p{
+	padding:0  0.1rem;
+	font-size: 0.08rem;
+}
+.introduce-content{
+	/*flex: 1;*/
+	float: left;
+	width: 2.8rem;
+	height: 1.5rem;
+	margin-left: 0.2rem;
+	background: #886644;
+}
+.introduce-left h3{
+	margin-top: 0.1rem;
+	text-align: center;
+}
+.introduce-left{
+	margin-left: 0;
+}
+.logo-picture{
+	height: 1.3rem;
+	width: 2.6rem;
+	margin: 0.1rem auto;
+}
+.logo-picture img{
+	width: 100%;
+	height: 100%;
+}
+
+/*欢迎的introduce---结束*/
+
+/*回到顶部---开始*/
+#back-top{
+	position:fixed;
+	right: 0.2rem;
+	bottom: 0.3rem;
+	background: transparent;
+}
+#back-top span,#back-top a{
+	font-size: 0.2rem;
+	color: #B8D59B;
+	outline: none;
+}
+/*回到顶部---结束*/
+
+/*我们的服务--开始*/
+#our-serve{
+	margin-top: 0.1rem;
+	height: 1.8rem;
+}
+#our-serve h2{
+	color: #B8D29B;
+	margin-left: 1rem;
+} 
+/*我们的服务--结束*/
