@@ -438,7 +438,7 @@ li:nth-child(5) .member-img{
 	position: absolute;
 	top: 0.1rem;
 	left: 0.1rem;
-	/*z-index: -1;*/
+	z-index: -1;
 }
 #cover{
 	height: 100%;
