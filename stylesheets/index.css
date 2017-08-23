@@ -11,6 +11,13 @@
 	background: #2D2D2D;
 	position: relative;
 }
+#toptop{
+	position: fixed;
+	height: 0.25rem;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+}
 #top-column{
 	width: 2rem;
 	position: absolute;
@@ -19,7 +26,7 @@
 	top: 0.05rem;
 	left: 0.5rem;
 }
-#top-column a{
+#top-column strong{
 	color: #fff;
 }
 #top-column span{
@@ -27,11 +34,23 @@
 	font-size: 0.1rem;
 	color: #fff;
 }
+#company{
+	color: #fff;
+	line-height: 0.25rem;
+	position: absolute;
+	right: 0.2rem;
+}
+#top-back{
+	height: 0.2rem;
+	width: 100%;
+}
+/*顶部固定栏--结束*/
 /*首页导航栏--开始*/
 #nav ul{
 	/*display: flex;*/
 	/*display: inline-block;*/
 	/*float: left;*/
+	margin-top: 0.05rem;
 	margin-bottom: 0.05rem;
 }
 #navigator li{
@@ -99,10 +118,10 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -0.5rem;
+	margin-left: -1rem;
 	margin-top: 0.25rem;
 	display: inline-block;
-	width: 1rem;
+	width: 2rem;
 	height: 0.3rem;
 	line-height: 0.3rem;
 	text-align: center;
@@ -116,6 +135,9 @@
 	background: none;
 	color: #B8D29B;
 	-webkit-transition: 1s ease;
+}
+#click h3{
+	font-size: 0.15rem;
 }
 #product #lunb{
 	display: inline-block;
@@ -173,6 +195,7 @@
 .introduce-left h3{
 	margin-top: 0.1rem;
 	text-align: center;
+	font-size: 0.13rem;
 }
 .introduce-left{
 	margin-left: 0;
@@ -195,6 +218,7 @@
 	right: 0.2rem;
 	bottom: 0.3rem;
 	background: transparent;
+	z-index: 9999;
 }
 #back-top span,#back-top a{
 	font-size: 0.2rem;
@@ -209,7 +233,423 @@
 	height: 1.8rem;
 }
 #our-serve h2{
-	color: #B8D29B;
+	color: #886644;
 	margin-left: 1rem;
 } 
+.serve-item{
+	margin: 0 0.3rem;
+}
+.serve-item li{
+	float: left;
+	width: 1.3rem;
+	margin-left: 0.1rem;
+	height: 2rem;
+	/*background: #4e4e4e;*/
+	color: #B8D29B;
+	position: relative;
+}
+.serve-item li:hover{
+	background: #99d6b3;
+	color: #ffffff;
+	font-weight: bold;
+}
+.serve-item li h3{
+	margin-top: 0.1rem;
+	text-align: center;
+	font-size: 0.15rem;
+}
+.serve-item span{
+	position: absolute;
+	font-size: 0.4rem;
+	margin: 0 auto;
+	left: 0.45rem;
+	top: 0.5rem;
+}
+.serve-item p{
+	padding: 0 0.1rem;
+	font-size: 0.08rem;
+}
+.serve-space{
+	height: 0.6rem;
+	width: 100%;
+}
 /*我们的服务--结束*/
+/*我们的团队--开始*/
+#our-group h2{
+	margin-left: 1.8rem;
+	color: #B8D29B;
+}
+#our-group .group{
+	height: 3.2rem;
+	position: relative;
+}
+.member-img{
+	height: 1rem;
+	width: 1rem;
+	margin: 0 auto;
+	/*background: #999999 url('../images/group2.jpg') no-repeat;*/
+	/*background-position:-0.4rem -0.2rem;*/
+	background-size:1rem;
+	border-radius: 0.5rem;
+}
+.member-img img{
+	width: 100%;
+	height: 100%;
+}
+.group-member{
+	display: flex;
+}
+.member{
+	/*float: left;*/
+	flex: 1;
+	margin-top: 0.4rem;
+}
+.member-info{
+	margin: 0 auto;
+}
+li:nth-child(1) .member-img{
+	background: #999999 url('../images/group0.jpg') no-repeat;
+	margin-top: 0.3rem;
+}
+li:nth-child(2) .member-img{
+	background: #999999 url('../images/group1.jpg') no-repeat;
+	margin-top: -0.2rem;
+}
+li:nth-child(4) .member-img{
+	background: #999999 url('../images/group3.jpg') no-repeat;
+	margin-top: -0.2rem;
+}
+li:nth-child(5) .member-img{
+	background: #999999 url('../images/group4.jpg') no-repeat;
+	margin-top: 0.3rem;
+}
+.select{
+	margin-top: 0.4rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 1rem;
+	background: #999999 url('../images/group2.jpg') no-repeat;
+	background-size:1.6rem;
+}
+.member-introduce{
+	position: absolute;
+	top: 1.5rem;
+}
+#our-group .member-name,#our-group .member-job{
+	margin-left: 0.8rem;
+	margin-top: 0.3rem;
+	font-size: 0.2rem;
+}
+#our-group .member-job{
+	margin-top: 0.1rem;
+	font-size: 0.25rem;
+	color: #e1112a;
+}
+.group .glyphicon{
+	font-size: 0.3rem;
+	color: #8D8D8D;
+}
+.group .glyphicon:hover{
+	color: #ffffff;
+}
+.group .glyphicon-log-in{
+	position: absolute;
+	left: 3rem;
+	top: 2.8rem;
+}
+/*我们的团队--结束*/
+
+
+/*我们的作品--开始*/
+#our-gallery{
+	margin-top: 0.1rem;
+
+}
+#our-gallery h2{
+	margin-left: 3.7rem;
+	color: #8D8D8D;
+}
+.gallery{
+	margin: 0.1rem 0.2rem;
+	/*background: #F0B774;*/
+	/*height: 4.8rem;*/
+	position: relative;
+}
+.gallery-top{
+	display: flex;
+}
+.gallery-three{
+	flex: 1;
+	height: 1.3rem;
+	margin-left: 0.1rem;
+	/*background: #667722;*/
+}
+.gallery-three:nth-child(1){
+	margin-left: 0;
+}
+.gallery-bottom{
+	display: flex;
+	margin-top: 0.1rem;
+	/*height: 3.4rem;*/
+}
+.gb-left{
+	flex: 1;
+	/*background: pink;*/
+	display: flex;
+	flex-direction: column;
+}
+.gb-right{
+	flex: 1;
+	margin-left: 0.1rem;
+	display: flex;
+	flex-direction: column;
+	/*background: pink;*/
+}
+.left-f{
+	flex: 1;
+	/*background: #000;*/
+	height: 1rem;
+	margin-left: 0.1rem;
+}
+.right-f{
+	flex: 2;
+	/*background: #000;*/
+	height: 2.1rem;
+}
+.gb-left .left-f:first-child{
+	margin-left: 0;
+}
+.gb-right .left-f:first-child{
+	margin-left: 0;
+}
+.gallery span{
+	position: relative;
+}
+.gallery span img{
+	height: 100%;
+	width: 100%;
+}
+.gallery span img:hover{
+	cursor: pointer;
+}
+.img-info{
+	color: #896984;
+	display: none;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	/*z-index: -1;*/
+}
+#cover{
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+	background: #ffcccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.show{
+	background: #ffffff;
+	top: 50%;
+	left: 1.5rem;
+	height: 2.4rem;
+	width: 3.2rem;
+	opacity: 1;
+	background: #ffffff;
+	/*position: fixed;*/
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+.show img{
+	/*margin-top: 0.1rem;*/
+	width: 100%;
+	height: 100%;
+}
+/*我们的作品--结束*/
+/*客户的评价--开始*/
+#customer-comment{
+	margin-bottom: 0.2rem;
+}
+#customer-comment h2{
+	margin-left: 4.5rem;
+	color: #896984;
+}
+.comments{
+	height: 1.6rem;
+	width: 100%;
+	background: #896984;
+	overflow: hidden;
+	position: relative;
+}
+.comments .comment-list{
+	width: 19.2rem;
+}
+.comments:hover span{
+	color: #f09388;
+}
+.comment-box{
+	position: absolute;
+}
+.comment-list li{
+	width: 6.4rem;
+	float: left;
+	position: relative;
+}
+.comments span{
+	position: absolute;
+	font-size: 0.2rem;
+	color: #c86984;
+	top: 0.6rem;
+}
+.glyphicon-hand-left{
+	left: 0.2rem;
+}
+.glyphicon-hand-right{
+	right: 0.2rem;
+}
+.comment-img{
+	position: relative;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 0.5rem;
+	margin: 0.3rem 0 0 0.5rem;
+}
+.comment-img img{
+	width: 100%;
+	height: 100%;
+}
+.comment-word{
+	position: absolute;
+	width: 3rem;
+	height: 1rem;
+	left: 2rem;
+	top: 0.5rem;
+	font-size: 0.1rem;
+	font-weight: 500;
+}
+/*客户的评价--结束*/
+/*联系我们吧--开始*/
+#contact-us{
+	margin-bottom: 0.1rem ;
+}
+#contact-us h2{
+	margin-left: 2.8rem;
+	color: #B8D29B;
+	margin-bottom: 0.1rem;
+}
+#contact-us .contact-input{
+	margin: 0 0.2rem;
+	/*height: 3rem;*/
+}
+#contact-us input:focus{
+	outline: none;
+}
+#contact-us textarea:focus{
+	outline: none;
+}
+.contact-info{
+	display: flex;
+}
+.contact-info span{
+	flex: 1;
+	font-size: 0.15rem;
+	text-align: center;
+	color: #c2c4c5;
+}
+.contact-info span p{
+	font-size: 0.1rem;
+	margin-top: 0.1rem;
+	line-height: 0.16rem;
+	text-align: center;
+	color: #c2c4c5;
+}
+.info-input{
+	display: flex;
+	margin-top: 0.28rem;
+}
+.info-input span{
+	flex: 1;
+	height: 0.25rem;
+	text-align: center;
+}
+.info-input span input{
+	height: 100%;
+	border-radius: 0.04rem;
+	border: 0.01rem solid #c2c4c5;
+	width: 80%;
+	font-size: 0.1rem;
+	padding-left: 0.05rem;
+}
+.info-textarea{
+	margin: 0 0.28rem 0 0.15rem;
+	margin-top: 0.15rem;
+}
+.info-textarea textarea{
+	width: 100%;
+	height: 1.6rem;
+	border-radius: 0.04rem;
+	border: 0.01rem solid #c2c4c5;
+	font-size: 0.1rem;
+	padding: 0.1rem 0.05rem;
+}
+.info-send{
+	height: 0.25rem;
+	margin:0.1rem 0 0 0.15rem;
+	width: 2.5rem;
+	border-radius: 0.03rem;
+}
+.info-send span{
+	text-align: center;
+	line-height: 0.25rem;
+	color: #ffffff;
+	font-size: 0.15rem;
+	width: 0.6rem;
+	margin: 0 auto;
+	float: left;
+	background: #B8D29B;
+	margin-right: 0.1rem;
+	border-radius: 0.03rem;
+}
+.info-send span:hover{
+	cursor: pointer;
+}
+#outlook{
+	width: 1.1rem;
+}
+.contact-input{
+	position: relative;
+}
+/*联系我们吧--结束*/
+/*footer--开始*/
+#footer{
+	margin-top: 0.1rem;
+	background: #747474;
+	margin: 0 0.2rem;
+	height: 0.4rem;
+	position: relative;
+	/*color: #ee3644;*/
+	color: #000;
+	font-size: 0.08rem;
+}
+.info-copyright{
+	bottom: 0;
+	margin: 0 1rem;
+}
+.friend-link{
+	padding-top: 0.1rem;
+}
+.friend-link a{
+	color: #B8D29B;
+}
+.friend-link a:hover{
+	color: #ee3644;
+}
+.friend-link ul li{
+	float: left;
+	width: 0.5rem;
+	text-align: center;
+}
+/*footer--结束*/
